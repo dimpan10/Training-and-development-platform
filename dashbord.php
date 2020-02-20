@@ -1,3 +1,6 @@
+
+
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -11,10 +14,42 @@
 <?php
 
 	  	// Navigation Bar
-	    include("../employee_nav.php");
-	  ?>
+	    include("navbar.php");
+?>
 
-<table class="table table-bordered">
+<div class="row" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
+  <div class="col-sm-4">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">DEPARTMENTS</h5>
+        <p class="card-text">Number:</p>
+        <a href="#" class="btn btn-outline-secondary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">TOTAL EMPLOYEES</h5>
+        <p class="card-text">Number:</p>
+        <a href="#" class="btn btn-outline-secondary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">TOTAL CV</h5>
+        <p class="card-text">Number:</p>
+        <a href="#" class="btn btn-outline-secondary">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<table class="table table-bordered" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
   <thead class="thead-active">
     <tr>
       <th scope="col">#</th>

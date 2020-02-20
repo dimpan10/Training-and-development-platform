@@ -1,28 +1,11 @@
-<?php
-session_start();
-include ("connect.php");
-/*if (isset($_SESSION['errorinput'])) {
-    if ($_SESSION['errorinput']) {
-        echo '<script>alert("erro!")</script>';
-        $_SESSION['errorinput'] = false;
-    }
- } 
- */
-    ?>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Page</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Simple Login Form</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-
-  <style type="text/css">
-  body {
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style type="text/css">
+body {
     font-family: "Lato", sans-serif;
 }
 
@@ -98,38 +81,43 @@ include ("connect.php");
     color: #fff;
 }
 </style>
+
+  <title></title>
 </head>
 <body>
 
 
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
 <div class="sidenav">
          <div class="login-main-text">
             <h2>Application<br> Login Page</h2>
-            <p>IT company</p>
+            <p>Login or register from here to access.</p>
          </div>
       </div>
       <div class="main">
-         <div class="col-md-4 col-sm-10">
+         <div class="col-md-6 col-sm-12">
             <div class="login-form">
-               <form action="auth.php" method="POST">
+               <form>
                   <div class="form-group">
                      <label>User Name</label>
-                     <input type="text" class="form-control" placeholder="User Name" name="username" id="username" required="required">
+                     <input type="text" class="form-control" placeholder="User Name">
                   </div>
                   <div class="form-group">
                      <label>Password</label>
-                     <input type="password" class="form-control" placeholder="Password" name="password" id="password" required="required">
+                     <input type="password" class="form-control" placeholder="Password">
                   </div>
                   <button type="submit" class="btn btn-black">Login</button>
+                  <button type="submit" class="btn btn-secondary">Register</button>
                </form>
             </div>
          </div>
       </div>
-
-
-
-
-
+  
 
 </body>
 </html>
