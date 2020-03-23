@@ -25,11 +25,11 @@
 <div class="form" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
   <div class="card-header">
 <div class="col" >
-	<h3 style="text-align: center;padding-bottom: 1%;">Delete User</h3>
+	<h3 style="text-align: center;padding-bottom: 1%;">Delete Employee</h3>
   <form class="form-horizontal" action="admin_employee_managment.php" id="form" method="post" enctype="multipart/form-data">
 	  	<div class="form-row">
 		    <div class="col-md-4 mb-3">
-		      <label for="name">Επιλογή χρήστη για διαγραφή</label>
+		      <label for="name">Choice emploee/label>
 		      <select class="form-control" id="user_to_delete" name="user_to_delete">
 		      	<?php 
 		      		$sql = "SELECT * FROM employee ";

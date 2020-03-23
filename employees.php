@@ -41,9 +41,14 @@
       <th scope="col">Name</th>
       <th scope="col">Surname</th>
       <th scope="col">Department</th>
-      <th scope="col">------</th>
-      <th scope="col">------</th>
-      <th scope="col">------</th>
+      <th scope="col">Email</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+      <th scope="col">Code skills</th>
+      <th scope="col">Info</th>
+      <th scope="col">File</th>
+      <th scope="col">Start date</th>
     </tr>
   </thead>
   <tbody>
@@ -57,6 +62,14 @@
           <td><?php  echo $row['name']; ?></td>
           <td><?php echo $row['surname']; ?></td>
           <td><?php echo $row['department']; ?></td>
+          <td><?php  echo $row['email']; ?></td>
+          <td><?php echo $row['salary']; ?></td>
+          <td><?php echo $row['address']; ?></td>
+          <td><?php  echo $row['city']; ?></td>
+          <td><?php echo $row['codeSkill']; ?></td>
+          <td><?php echo $row['info']; ?></td>
+          <td><?php echo $row['info']; ?></td>
+          <td><?php echo $row['startDate']; ?></td>
         </tr>
     <?php
         }

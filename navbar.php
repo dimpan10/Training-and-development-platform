@@ -26,8 +26,9 @@
          Employee
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="add_user.php">New user</a>
-          <a class="dropdown-item" href="remove_user.php">Remove user</a>
+          <a class="dropdown-item" href="add_employee.php">Add employee</a>
+          <a class="dropdown-item" href="add_user.php">Add user</a>
+          <a class="dropdown-item" href="delete_employee.php">Remove user</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
