@@ -1,6 +1,6 @@
 <?php
 	include ("connect.php");
-	
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -16,24 +16,28 @@
 </body>
 </html>
 
+<?php
+	include ("navbar.php");
+	
+?>
 
 
-
-
-<div class="col">
-	<h3 style="text-align: center;padding-bottom: 1%;">Διαγραφή χρήστη</h3>
+<div class="form" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
+  <div class="card-header">
+<div class="col" >
+	<h3 style="text-align: center;padding-bottom: 1%;">Delete User</h3>
   <form class="form-horizontal" action="admin_employee_managment.php" id="form" method="post" enctype="multipart/form-data">
 	  	<div class="form-row">
 		    <div class="col-md-4 mb-3">
 		      <label for="name">Επιλογή χρήστη για διαγραφή</label>
 		      <select class="form-control" id="user_to_delete" name="user_to_delete">
 		      	<?php 
-		      		$sql = "SELECT * FROM govrn_emp ";
+		      		$sql = "SELECT * FROM employee ";
 				    $res_data = mysqli_query($connection,$sql);
 				    //This is used in order admin which is first user cannot be deleted
 				    while($row = mysqli_fetch_array($res_data)){
 				    	if ($row['admin'] == 0 ) {
-				    		echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+				    		echo '<option value="'.$row['id'].'">'.$row['name'].' '.$row['surname'].'</option>';
 				    	}
 				    }
 		      	?>
@@ -44,4 +48,6 @@
 		    <button type="submit" class="btn btn-danger" value="btnDel" id="btnDel" name="btnDel" >Διαγραφή</button>
 	  	</div>
 	</form>
+</div>
+</div>
 </div>

@@ -15,12 +15,14 @@
 
 			
 			if ($row['username'] == $username && $row['password'] == $password ) {
+				session_start();
 				$_SESSION['user'] = true;
-				$_SESSION['user_id'] = $row['id'];
+				$_SESSION['user_id'] = $row['user'];
 				$_SESSION['user_name'] = $row['username'];
 				$_SESSION['name'] = $row['name'];
 				//$_SESSION['admin'] = $row['admin'];
 				header("Location: index.php");
+				
 			}
 			else {
 				$_SESSION['errorinput'] = true;

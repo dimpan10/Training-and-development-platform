@@ -8,7 +8,12 @@ include ("connect.php");
     }
  } 
  */
+ if (!isset($_SESSION['user_id'])) {
+   //header("Location: login.php");
+  }
     ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

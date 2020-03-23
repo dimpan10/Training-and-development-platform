@@ -8,23 +8,6 @@
   }
   */
 
-
- $total_pages_sql = "SELECT COUNT(*) FROM departments WHERE dep_id";
-  $result = mysqli_query($connection,$total_pages_sql);
-  $total_departments = mysqli_fetch_array($result)[0];
-
-$total_pages_sql = "SELECT COUNT(*) FROM employee WHERE employee_id";
-  $result = mysqli_query($connection,$total_pages_sql);
-  $total_employees = mysqli_fetch_array($result)[0];
-
-$total_pages_sql = "SELECT COUNT(*) FROM departments WHERE dep_id";
-  $result = mysqli_query($connection,$total_pages_sql);
-  $total_cv = mysqli_fetch_array($result)[0];
-
-
-
-
-$total_employees
 ?>
 
 <!DOCTYPE html>
@@ -46,39 +29,7 @@ $total_employees
 	    include("navbar.php");
 ?>
 
-<div class="row" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
-  <div class="col-sm-4">
-    <div class="card text-center">
-      <div class="card-body">
-        <h5 class="card-title">DEPARTMENTS</h5> 
-        <p class="card-text">Number:<?php echo " (".$total_departments.")"; ?></p>
-        <a href="departments.php" class="btn btn-outline-secondary">Open</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card text-center">
-      <div class="card-body">
-        <h5 class="card-title">TOTAL EMPLOYEES</h5>
-        <p class="card-text">Number:<?php echo " (".$total_employees.")"; ?></p>
-        <a href="employees.php" class="btn btn-outline-secondary">Open</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body text-center">
-        <h5 class="card-title">TOTAL CV</h5>
-        <p class="card-text">Number:<?php echo " (".$total_cv.")"; ?></p>
-        <a href="cv.php" class="btn btn-outline-secondary">Open</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-
-<br>
 
 <table class="table table-bordered" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
 
@@ -90,6 +41,9 @@ $total_employees
       <th scope="col">Name</th>
       <th scope="col">Surname</th>
       <th scope="col">Department</th>
+      <th scope="col">------</th>
+      <th scope="col">------</th>
+      <th scope="col">------</th>
     </tr>
   </thead>
   <tbody>
@@ -109,12 +63,6 @@ $total_employees
     ?>
   </tbody>
 </table>
-
-
-
-
-
-
 
 
 

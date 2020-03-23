@@ -1,6 +1,6 @@
 <?php
   include("connect.php");
-  
+
   /*include ("../time_out_session.php");
   if (!isset($_SESSION['user_id'])) {
     header("Location: ../login.php");
@@ -33,13 +33,14 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="financials.php">Financials</a>
       </li>
     </ul>
-    <li class="nav-item" style="text-align: right;">
-        <div class="btn"><?php echo $_SESSION["name"]?></div>       
+      <li class="nav-item" style="text-align: right;">
+        <a href="account_man.php" class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><?php echo $_SESSION['user_name'];?></a>     
         <a href="logout.php" class="btn btn-outline-danger my-2 my-sm-0" type="submit">logout</a>
       </li>
+
   </div>
 
 
