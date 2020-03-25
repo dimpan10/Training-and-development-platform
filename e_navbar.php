@@ -2,7 +2,7 @@
   include("connect.php");
 
   /*include ("../time_out_session.php");
-  if (!isset($_SESSION['user_id'])) {
+  if (!isset($_SESSION['user_id'])) {s
     header("Location: ../login.php");
   }
   */
@@ -16,28 +16,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="dashbord.php">Dashbord</a>
+        <a class="nav-link" href="e_dashbord.php">Dashbord</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Employee
+         Training
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="add_employee.php">Add employee</a>
-          <a class="dropdown-item" href="add_user.php">Add user</a>
-          <a class="dropdown-item" href="delete_employee.php">Remove user</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="ask_train">Ask for training</a>
+          <a class="dropdown-item" href="comlete_train">Complete training</a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="financials.php">Financials</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="set_training.php">Training</a>
       </li>
     </ul>
       <li class="nav-item" style="text-align: right;">
@@ -46,11 +34,5 @@
       </li>
 
   </div>
-
-
-
-
-
-
 
 </nav>

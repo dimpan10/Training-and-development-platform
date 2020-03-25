@@ -20,7 +20,7 @@
 				$_SESSION['user_id'] = $row['user'];
 				$_SESSION['user_name'] = $row['username'];
 				$_SESSION['name'] = $row['name'];
-				//$_SESSION['admin'] = $row['admin'];
+				$_SESSION['admin'] = $row['admin'];
 				header("Location: index.php");
 				
 			}

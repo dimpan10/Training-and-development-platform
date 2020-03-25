@@ -17,7 +17,7 @@ $total_pages_sql = "SELECT COUNT(*) FROM employee WHERE employee_id";
   $result = mysqli_query($connection,$total_pages_sql);
   $total_employees = mysqli_fetch_array($result)[0];
 
-$total_pages_sql = "SELECT COUNT(*) FROM departments WHERE dep_id";
+$total_pages_sql = "SELECT COUNT(*) FROM cv WHERE id";
   $result = mysqli_query($connection,$total_pages_sql);
   $total_cv = mysqli_fetch_array($result)[0];
 
@@ -94,7 +94,7 @@ $total_employees
   </thead>
   <tbody>
     <?php
-      $sql = "SELECT * FROM employee";
+      $sql = "SELECT * FROM employee ORDER BY employee_id";
       $res_data = mysqli_query($connection,$sql);
       while($row = mysqli_fetch_array($res_data)){
     ?>

@@ -37,7 +37,12 @@ session_start();
 <?php
 
       // Navigation Bar
-      include("navbar.php");
+      if($_SESSION['admin']==0){
+        include("e_navbar.php");
+      }
+      else if($_SESSION['admin']==1){
+        include("navbar.php");
+      }
     ?>
 
 <body>
@@ -47,8 +52,8 @@ session_start();
 <div class="container">
 
   <!-- Portfolio Item Heading -->
-  <h1 class="my-4">Page Heading
-    <small>Secondary Text</small>
+  <h1 class="my-4">Trainig & Development
+    <small>Platform</small>
   </h1>
 
   <!-- Portfolio Item Row -->

@@ -23,30 +23,13 @@ session_start();
 
 <body>
 
-<div class="form" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
-  <div class="card-header">
-  <div class="col" >
-	<h3 style="text-align: center;padding-bottom: 1%;">Account setings</h3>
-  <form class="form-horizontal" action="account_man.php" id="form" method="post" enctype="multipart/form-data">
-	  	<div class="form-row">
-		    <div class="col-md-4 mb-3">
-		      <label for="name">Change password</label>
-		      <form class="needs-validation" novalidate>
-	  			<div class="form-row">
-	    		<div class="col-md-4 mb-3">
-	     		 <input type="text" class="form-control" id="validationTooltip01" placeholder="New Password" required>
-	      			<div class="valid-tooltip">
-	        Looks good!
-	      </div>
-	    </div>
-	    <br>
-	  	<div class="form-row">
-		    <button type="submit" class="btn btn-danger" value="newPass" id="newPass" name="newPass" >Change</button>
-	  	</div>
-	</form>
-</div>
-</div>
-</div>
+
+
+
+
+
+
+
 
 
 
@@ -54,6 +37,4 @@ session_start();
 
 
 </body>
-
 </html>
-

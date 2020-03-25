@@ -43,7 +43,7 @@
   </thead>
   <tbody style="text-align: center;">
     <?php
-      $sql = "SELECT * FROM departments";
+      $sql = "SELECT * FROM departments ORDER BY dep_id";
       $res_data = mysqli_query($connection,$sql);
       while($row = mysqli_fetch_array($res_data)){
     ?>

@@ -53,7 +53,7 @@
   </thead>
   <tbody>
     <?php
-      $sql = "SELECT * FROM employee";
+      $sql = "SELECT * FROM employee ORDER BY employee_id";
       $res_data = mysqli_query($connection,$sql);
       while($row = mysqli_fetch_array($res_data)){
     ?>
