@@ -53,7 +53,7 @@ if (!isset($_SESSION['user_id'])) {
 	        <div class="input-group-prepend">
 	          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
 	        </div>
-	        <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" name="username" required>
+	        <input type="text" class="form-control" id="username" placeholder="Username"  name="username" required>
 	        <div class="invalid-tooltip">
 	          Please choose a unique and valid username.
 	        </div>
@@ -155,7 +155,7 @@ if (!isset($_SESSION['user_id'])) {
 
 		<div class="custom-file">
 		  <input type="file" class="custom-file-input" id="cv" name="cv">
-		  <label class="custom-file-label" for="employeeFile" >Choose CV/label>
+		  <label class="custom-file-label" for="employeeFile" >Choose CV </label>
 		</div>
 	
 	<br>

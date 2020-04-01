@@ -10,7 +10,7 @@
 			$username = mysqli_real_escape_string($connection, $username);
 			$password = mysqli_real_escape_string($connection, $password);
 
-			$result = mysqli_query($connection, "SELECT * FROM admins WHERE username = '$username' AND password = '$password'");
+			$result = mysqli_query($connection, "SELECT * FROM employee WHERE username = '$username' AND password = '$password'");
 			$row = mysqli_fetch_array($result);
 
 			

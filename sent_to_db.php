@@ -45,10 +45,29 @@
 		else{
 			$comment = "empty";
 		}
-		date_default_timezone_set('Europe/Athens');
-		mysqli_query($connection,"INSERT INTO employee VALUES ('$name', '$surname', '$department', DEFAULT, '$salary', '$email', '$city', 'test', '$comment', '$address', 'zip', '".date('Y-m-d H:i:s')."', 0 )");
 
-					//$employee_id = mysqli_insert_id($connection);
+		if (!empty($_POST['username'])) {
+			$username = mysqli_real_escape_string($connection,$_POST['username']);
+		}
+
+		if (!empty($_POST['username'])) {
+			$password = mysqli_real_escape_string($connection,$_POST['username']);
+		}
+		
+
+		//$fileName = $complaint_id.basename($_FILES["file"]["name"]);
+		//$targetFilePath = $targetDir . $fileName;
+		//$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+
+
+
+		date_default_timezone_set('Europe/Athens');
+		mysqli_query($connection,"INSERT INTO employee VALUES (DEFAULT,'$name', '$surname', '$department', '$username', '$password' ,'$salary', '$email', '$city', 'test', '$comment', '$address', '".date('Y-m-d H:i:s')."', 0 )");
+
+		//mysqli_query($connection,"INSERT INTO file (`id`, `cv_surname`, `cv_name`) 
+												//VALUES (DEFAULT, '$surname', '$fileName')");
+
 		
 
 ?>

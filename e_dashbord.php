@@ -43,34 +43,25 @@ $total_employees
 <?php
 
 	  	// Navigation Bar
-	    include("navbar.php");
+	    include("e_navbar.php");
 ?>
 
 <div class="row" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
-  <div class="col-sm-4">
+  <div class="col-sm-6">
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title">DEPARTMENTS</h5> 
+        <h5 class="card-title">Open Tairnings</h5> 
         <p class="card-text">Number:<?php echo " (".$total_departments.")"; ?></p>
         <a href="departments.php" class="btn btn-outline-secondary">Open</a>
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-6">
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title">TOTAL EMPLOYEES</h5>
+        <h5 class="card-title">Closed Trainigs</h5>
         <p class="card-text">Number:<?php echo " (".$total_employees.")"; ?></p>
         <a href="employees.php" class="btn btn-outline-secondary">Open</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body text-center">
-        <h5 class="card-title">TOTAL CV</h5>
-        <p class="card-text">Number:<?php echo " (".$total_cv.")"; ?></p>
-        <a href="cv.php" class="btn btn-outline-secondary">Open</a>
       </div>
     </div>
   </div>
@@ -83,7 +74,6 @@ $total_employees
     <table class="table table-bordered table-hover">
       <thead class="thead-active">
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Name</th>
           <th scope="col">Surname</th>
           <th scope="col">Department</th>
@@ -91,12 +81,11 @@ $total_employees
       </thead>
       <tbody>
         <?php
-          $sql = "SELECT * FROM employee ORDER BY employee_id";
+          $sql = "SELECT * FROM employee WHERE employee_id";
           $res_data = mysqli_query($connection,$sql);
           while($row = mysqli_fetch_array($res_data)){
         ?>
             <tr>
-              <th scope="row"><?php  echo $row['employee_id'];?></th>
               <td><?php  echo $row['name']; ?></td>
               <td><?php echo $row['surname']; ?></td>
               <td><?php echo $row['department']; ?></td>

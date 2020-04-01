@@ -60,18 +60,20 @@ session_start();
   <div class="row">
 
     <div class="col-md-8">
-      <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+      <img class="img-fluid" src="tad.png" alt="">
     </div>
 
     <div class="col-md-4">
       <h3 class="my-3">Project Description</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+      <p class="text-justify">In this project will be develop a training & Development Platform for IT Company. This
+          project will be help managers and employees to understand the needs of company and
+          evolve the personal and professional skills via the training</p>
       <h3 class="my-3">Project Details</h3>
       <ul>
-        <li>Lorem Ipsum</li>
-        <li>Dolor Sit Amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing Elit</li>
+        <li>Employee Management</li>
+        <li>Skills Training</li>
+        <li>Financials</li>
+        <li>Company Control</li>
       </ul>
     </div>
 

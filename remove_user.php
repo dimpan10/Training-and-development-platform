@@ -35,7 +35,7 @@
 							    //This is used in order admin which is first user cannot be deleted
 							    while($row = mysqli_fetch_array($res_data)){
 							    	if ($row['admin'] == 0 ) {
-							    		echo '<option value="'.$row['id'].'">'.$row['name'].' '.$row['surname'].'</option>';
+							    		echo '<option value="'.$row['employee_id'].'">'.$row['name'].' '.$row['surname'].'</option>';
 							    	}
 							    }
 					      	?>
@@ -43,7 +43,7 @@
 					    </div>				  
 				  	</div>
 				  	<div class="form-row">
-					    <button type="submit" class="btn btn-danger" value="btnDel" id="btnDel" name="btnDel" >Διαγραφή</button>
+					    <button type="submit" class="btn btn-danger" value="btnDel" id="btnDel" name="btnDel" >Delete</button>
 			  	</div>
 			</form>
 				</div>

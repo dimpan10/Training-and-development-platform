@@ -109,12 +109,11 @@ include ("connect.php");
 
 <div class="sidenav">
          <div class="login-main-text">
-            <h2>Application<br> Login Page</h2>
-            <p>IT company</p>
+            <img class="img-fluid" src="tad_login.png" alt="">
          </div>
       </div>
       <div class="main">
-         <div class="col-md-4 col-sm-10">
+         <div class="col-md-5 col-sm-10">
             <div class="login-form">
                <form action="auth.php" method="POST">
                   <div class="form-group">

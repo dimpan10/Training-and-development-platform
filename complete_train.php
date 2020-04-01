@@ -18,37 +18,10 @@ session_start();
 <?php
 
       // Navigation Bar
-      include("navbar.php");
+      include("e_navbar.php");
     ?>
 
 <body>
-
-
-	<table class="table table-bordered" style="padding-left:2%;padding-top: 2%; padding-right: 2%">
-		<table class="table table-bordered table-hover">
-		  <thead class="thead-active">
-		    <tr>
-		      <th scope="col">Name</th>
-		      <th scope="col">Surname</th>
-		      <th scope="col">Skills</th>
-		    </tr>
-		  	</thead>
-		  	<tbody>
-		    <?php
-		      $sql = "SELECT * FROM employee ORDER BY employee_id";
-		      $res_data = mysqli_query($connection,$sql);
-		      while($row = mysqli_fetch_array($res_data)){
-		    ?>
-		        <tr>
-		          <td><?php  echo $row['name']; ?></td>
-		          <td><?php echo $row['surname']; ?></td>
-		          <td><?php echo $row['codeSkill']; ?></td>
-		        </tr>
-		    <?php
-		        }
-		    ?>
-		  </tbody>
-		</table>
 
 
 
