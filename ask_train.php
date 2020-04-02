@@ -9,7 +9,8 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
@@ -35,16 +36,51 @@ session_start();
 
  <script type='text/javascript'>
     $(document).ready(function(){
-    $('.button').click(function(){
-        var clickBtnValue = $(this).val();
-        var ajaxurl = 'ajax.php',
-        data =  {'action': clickBtnValue};
-        $.post(ajaxurl, data, function (response) {
-        // Response div goes here.
-         alert("action performed successfully");
+
+        $('#testButton1').click(function(e){
+            var value = "button1";
+            var ajaxurl = "update_training.php";
+            var data =  {'buttonValue': value};
+            
+            $.post(ajaxurl, data, function (dataReturned) {
+                alert("Joined to front End lesson! Please logout and login again! ");
+            });                   
+           
+        });
+
+        $('#testButton2').click(function(e){
+            var value = "button2";
+            var ajaxurl = "update_training.php";
+            var data =  {'buttonValue': value};
+            
+            $.post(ajaxurl, data, function (dataReturned) {
+                alert("Joined to back End lesson! Please logout and login again! ");
+            });                   
+           
+        });
+
+        $('#testButton3').click(function(e){
+            var value = "button3";
+            var ajaxurl = "update_training.php";
+            var data =  {'buttonValue': value};
+            
+            $.post(ajaxurl, data, function (dataReturned) {
+                alert("Joined to DBMS lesson! Please logout and login again! ");
+            });                   
+           
+        });
+
+        $('#testButton4').click(function(e){
+            var value = "button4";
+            var ajaxurl = "update_training.php";
+            var data =  {'buttonValue': value};
+            
+            $.post(ajaxurl, data, function (dataReturned) {
+                alert("Joined to CMS lesson! Please logout and login again! ");
+            });                   
+           
         });
     });
- });
     </script>
 
 <div class="container mb-5 mt-5">
@@ -61,7 +97,7 @@ session_start();
                     <li>Javascript</li>
                     <li>Angular</li>
                 </ul>
-               <input type="submit" class="btn btn-outline-secondary" name="Join" value="1" onclick= "insert()"/>
+               <input type="submit" class="btn btn-outline-secondary" name="Join" id="testButton1" value="Join" />
             </div>
         </div>
 
@@ -79,7 +115,7 @@ session_start();
                     <li>Ruby</li>
                     <li>C#</li>
                 </ul>
-                 <a href="back_ent.php" class="btn btn-outline-secondary">Join</a>
+                 <input type="submit" class="btn btn-outline-secondary" name="Join" id="testbButton2" value="Join" />
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4">
@@ -94,7 +130,7 @@ session_start();
                     <li>Oracle</li>
                     <li> </li>
                 </ul>
-                 <a href="dbms.php" class="btn btn-outline-secondary">Join</a>
+                 <input type="submit" class="btn btn-outline-secondary" name="Join" id="testButton3" value="Join" />
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4">
@@ -109,7 +145,7 @@ session_start();
                     <li>Mangento</li>
                     <li> </li>
                 </ul>
-                <a href="cms.php" class="btn btn-outline-secondary">Join</a>
+                <input type="submit" class="btn btn-outline-secondary" name="Join" id="testButton4" value="Join" />
             </div>
         </div>
     </div>

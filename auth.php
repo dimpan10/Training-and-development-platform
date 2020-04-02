@@ -17,10 +17,11 @@
 			if ($row['username'] == $username && $row['password'] == $password ) {
 				session_start();
 				$_SESSION['user'] = true;
-				$_SESSION['user_id'] = $row['user'];
+				$_SESSION['user_id'] = $row['employee_id'];
 				$_SESSION['user_name'] = $row['username'];
 				$_SESSION['name'] = $row['name'];
 				$_SESSION['admin'] = $row['admin'];
+				$_SESSION['training_id'] = $row['training'];
 				header("Location: index.php");
 				
 			}

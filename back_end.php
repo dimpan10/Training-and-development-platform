@@ -1,6 +1,7 @@
 <?php
 include("connect.php");
 
+
 ?>
 
 
@@ -37,7 +38,7 @@ include("connect.php");
 	<table class="table">
   	<thead class="thead-dark">
     <tr>
-        <th scope="col">Joomla!</th>
+        <th scope="col">Java</th>
 		<th scope="col">Title</th>
 		<th scope="col">Type</th>
 		<th scope="col">Link</th>
@@ -67,37 +68,7 @@ include("connect.php");
 <table class="table">
   <thead class="thead-dark">
     <tr>
-        <th scope="col">WordPress</th>
-		<th scope="col">Title</th>
-		<th scope="col">Type</th>
-		<th scope="col">Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-		<th scope="row">1</th>
-		<td>Oficial WordPress Web Site</td>
-		<td>Web site</td>
-		<td><a href="https://wordpress.com/learn//" class="btn btn-outline-secondary" target="_blank">Join</a></td>
-	<tr>
-		<th scope="row">2</th>
-		<td>Building a website using Wordpess, tutorial </td>
-		<td>Text toutorial</td>
-		<td><a href="https://firstsiteguide.com/learn-wordpress/" class="btn btn-outline-secondary" target="_blank">Join</a></td>
-	</tr>
-	<tr>
-		<th scope="row">3</th>
-		<td>Build a Joomla Website</td>
-		<td>Video</td>
-		<td><a href="https://www.youtube.com/wpbeginner?sub_confirmation=1" class="btn btn-outline-secondary" target="_blank">Join</a></td>
-	</tr>
-  </tbody>
-</table>
-
-<table class="table">
- <thead class="thead-dark">
-    <tr>
-        <th scope="col">DrupalS</th>
+        <th scope="col">PHP</th>
 		<th scope="col">Title</th>
 		<th scope="col">Type</th>
 		<th scope="col">Link</th>
@@ -123,6 +94,36 @@ include("connect.php");
 	</tr>
   </tbody>
 </table>
-<input type="submit" class="btn btn-outline-secondary" name="Join" value="end" onclick= "insert()"/>
+
+<table class="table">
+ <thead class="thead-dark">
+    <tr>
+        <th scope="col">Python</th>
+		<th scope="col">Title</th>
+		<th scope="col">Type</th>
+		<th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+		<th scope="row">1</th>
+		<td>Oficial Joomla Web Site</td>
+		<td>Web site</td>
+		<td><a href="https://extensions.joomla.org/" class="btn btn-outline-secondary" target="_blank">Join</a></td>
+	<tr>
+		<th scope="row">2</th>
+		<td>Building a website using Joomla, step-by-step</td>
+		<td>Text toutorial</td>
+		<td><a href="https://websitesetup.org/build-website-with-joomla/" class="btn btn-outline-secondary" target="_blank">Join</a></td>
+	</tr>
+	<tr>
+		<th scope="row">3</th>
+		<td>Build a Joomla Website</td>
+		<td>Video</td>
+		<td><a href="https://www.youtube.com/watch?v=B-7jsURjLiU" class="btn btn-outline-secondary" target="_blank">Join</a></td>
+	</tr>
+  </tbody>
+</table>
+
 </body>
 </html>

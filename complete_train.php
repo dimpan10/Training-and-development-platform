@@ -19,7 +19,22 @@ session_start();
 
       // Navigation Bar
       include("e_navbar.php");
+
+       //training choise
+      if($_SESSION['training_id']==1){
+        include("front_ent.php");
+      }
+      else if($_SESSION['training_id']==2){
+        include("back_end.php");
+      }
+      else if($_SESSION['training_id']==3){
+        include("dbms.php");
+      }
+      else if($_SESSION['training_id']==4){
+      include("cms.php");
+      }
     ?>
+    
 
 <body>
 

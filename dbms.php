@@ -1,6 +1,5 @@
 <?php
 include("connect.php");
-session_start();
 
 ?>
 
@@ -28,11 +27,7 @@ session_start();
 	</style>
 </head>
 
-<?php
 
-      // Navigation Bar
-      include("e_navbar.php");
-    ?>
 
 <body>
 
@@ -129,6 +124,8 @@ session_start();
 	</tr>
   </tbody>
 </table>
+
+<a href="cms.php" class="btn btn-outline-secondary">end</a>
 
 </body>
 </html>
