@@ -2,11 +2,10 @@
   include("connect.php");
   session_start();
   
-  /*include ("../time_out_session.php");
   if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
   }
-  */
+  
 $total_pages_sql = "SELECT COUNT(*) FROM employee WHERE department='IT'";
   $result = mysqli_query($connection,$total_pages_sql);
   $total_it = mysqli_fetch_array($result)[0];
@@ -70,11 +69,11 @@ $total_pages_sql = "SELECT COUNT(*) FROM employee WHERE department='IT'";
 
 	      function drawChart() {
 	        var data = google.visualization.arrayToDataTable([
-	          ['Year', 'Sales', 'Expenses'],
-	          ['2004',  1000,      400],
-	          ['2005',  1170,      460],
-	          ['2006',  660,       1120],
-	          ['2007',  1030,      540]
+	          ['Year', 'Training', 'Expenses'],
+	          ['2017',  1000,      400],
+	          ['2018',  1170,      460],
+	          ['2019',  660,       1120],
+	          ['2020',  1030,      540]
 	        ]);
 
 	        var options = {

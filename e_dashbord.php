@@ -2,11 +2,11 @@
   include("connect.php");
   session_start();
   
-  /*include ("../time_out_session.php");
+  
   if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
   }
-  */
+  
 
 
  $total_pages_sql = "SELECT COUNT(*) FROM departments WHERE dep_id";
@@ -77,11 +77,12 @@ $total_employees
           <th scope="col">Name</th>
           <th scope="col">Surname</th>
           <th scope="col">Department</th>
+          <th scope="col">Training path</th>
         </tr>
       </thead>
       <tbody>
         <?php
-          $sql = "SELECT * FROM employee WHERE employee_id";
+          $sql = "SELECT * FROM employee WHERE employee_id AND training = 3 ";
           $res_data = mysqli_query($connection,$sql);
           while($row = mysqli_fetch_array($res_data)){
         ?>
@@ -89,7 +90,9 @@ $total_employees
               <td><?php  echo $row['name']; ?></td>
               <td><?php echo $row['surname']; ?></td>
               <td><?php echo $row['department']; ?></td>
+              <td><?php echo $row['training']; ?></td>
             </tr>
+
         <?php
             }
         ?>

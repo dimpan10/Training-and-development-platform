@@ -45,10 +45,14 @@ session_start();
     </div>
 
     <div class="col-md-4">
-      <h3 class="my-1">Project Description</h3>
-      <p class="text-justify">In this project will be develop a training & Development Platform for IT Company. This
-          project will be help managers and employees to understand the needs of company and
-          evolve the personal and professional skills via the training</p>
+      <h3 class="my-1">General Objectives</h3>
+      <p class="text-justify">
+● To find and evaluate the theoretical background of HR systems and training platforms
+● To study the use of Human Resource Information.
+● To develop a complete web application for usage by IT Companies
+● To study the effectiveness of a training platform on employees.
+● To develop an efficient platform
+</p>
       <h3 class="my-3">Project Details</h3>
       <ul>
         <li>Employee Management</li>
@@ -73,7 +77,7 @@ session_start();
 
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="ob.php">
+            <img class="img-fluid" src="ob.php" alt="">
           </a>
     </div>
 

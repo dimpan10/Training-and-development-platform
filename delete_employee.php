@@ -1,6 +1,10 @@
 <?php
 	include ("connect.php");
 	session_start();
+
+	if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+  }
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +33,7 @@
   <form class="form-horizontal" action="admin_employee_managment.php" id="form" method="post" enctype="multipart/form-data">
 	  	<div class="form-row">
 		    <div class="col-md-4 mb-3">
-		      <label for="name">Choice emploee/label>
+		      <label for="name"> Choice emploee 
 		      <select class="form-control" id="user_to_delete" name="user_to_delete">
 		      	<?php 
 		      		$sql = "SELECT * FROM employee ";
@@ -45,7 +49,7 @@
 		    </div>				  
 	  	</div>
 	  	<div class="form-row">
-		    <button type="submit" class="btn btn-danger" value="btnDel" id="btnDel" name="btnDel" >Διαγραφή</button>
+		    <button type="submit" class="btn btn-danger" value="btnDel" id="btnDel" name="btnDel" >Delete</button>
 	  	</div>
 	</form>
 </div>

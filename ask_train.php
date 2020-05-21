@@ -54,7 +54,7 @@ session_start();
             var data =  {'buttonValue': value};
             
             $.post(ajaxurl, data, function (dataReturned) {
-                alert("Joined to back End lesson! Please logout and login again! ");
+                alert("Joined to Back End lesson! Please logout and login again! ");
             });                   
            
         });
@@ -101,9 +101,7 @@ session_start();
             </div>
         </div>
 
-       
-
-       <div class="card card-pricing text-center px-3 mb-4">
+        <div class="card card-pricing text-center px-3 mb-4">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Back End</span>
             <div class="bg-transparent card-header pt-4 border-0">
                 <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="45">Java</span></h1>
@@ -115,9 +113,10 @@ session_start();
                     <li>Ruby</li>
                     <li>C#</li>
                 </ul>
-                 <input type="submit" class="btn btn-outline-secondary" name="Join" id="testbButton2" value="Join" />
+                 <input type="submit" class="btn btn-outline-secondary" name="Join" id="testButton2" value="Join" />
             </div>
         </div>
+       
         <div class="card card-pricing text-center px-3 mb-4">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">DBMS</span>
             <div class="bg-transparent card-header pt-4 border-0">

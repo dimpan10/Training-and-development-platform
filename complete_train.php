@@ -33,6 +33,9 @@ session_start();
       else if($_SESSION['training_id']==4){
       include("cms.php");
       }
+      else if($_SESSION['training_id']==0){
+      include("error.php");
+      }
     ?>
     
 

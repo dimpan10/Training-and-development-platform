@@ -63,11 +63,9 @@
 
 
 		date_default_timezone_set('Europe/Athens');
-		mysqli_query($connection,"INSERT INTO employee VALUES (DEFAULT,'$name', '$surname', '$department', '$username', '$password' ,'$salary', '$email', '$city', 'test', '$comment', '$address', '".date('Y-m-d H:i:s')."', 0 )");
+		mysqli_query($connection,"INSERT INTO employee VALUES (DEFAULT,'$name', '$surname', '$department', '$username', '$password' ,'$salary', '$email', '$city', 'test', '$comment', '$address', '".date('Y-m-d H:i:s')."', 0 , 0 )");
 
 		//mysqli_query($connection,"INSERT INTO file (`id`, `cv_surname`, `cv_name`) 
 												//VALUES (DEFAULT, '$surname', '$fileName')");
-
-		
 
 ?>

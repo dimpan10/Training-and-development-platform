@@ -1,14 +1,14 @@
 <?php
   include("connect.php");
 
-  /*include ("../time_out_session.php");
-  if (!isset($_SESSION['user_id'])) {s
-    header("Location: ../login.php");
+  
+  if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
   }
-  */
+  
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">It company</a>
+  <a class="navbar-brand" href="#">TAD Platform</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

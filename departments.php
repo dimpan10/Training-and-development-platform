@@ -1,11 +1,10 @@
 <?php
   include("connect.php");
   session_start();
-  /*include ("../time_out_session.php");
+  
   if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login.php");
+    header("Location: login.php");
   }
-  */
 
 
 ?>
